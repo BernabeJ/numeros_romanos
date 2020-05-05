@@ -23,7 +23,7 @@ def romano_a_entero(numero_romano):
         else:
             numRepes = 1
         
-        if letra in romanos and romanos[letra] <= romanos[letraAnt] or romanos[letraAnt] == 0:
+        if letra in romanos and romanos[letra] <= romanos[letraAnt] or letraAnt == 0:
             entero += romanos[letra]
         elif letra in romanos and romanos[letra] >romanos[letraAnt]:
             entero += romanos[letra] -2 * romanos[letraAnt]
